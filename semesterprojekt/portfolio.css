@@ -1,0 +1,185 @@
+  /*onepage setup*/
+*{margin:0;
+  padding:0;
+  font-family: 'Noto Sans JP', sans-serif;
+  }
+  section {width: 100%; height: 800px; float:left;
+  }
+#pageA {
+  background-image: url(img/newzealandbjerg.jpg.jpg);
+  filter:grayscale(100%);
+}
+p{font-weight: lighter !important;}
+/* baggrund på page1 */
+.background-text {
+  background-color: rgba(0,0,0, 0.4);
+  color: #D9DAD9;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.logobillede {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  text-align: center;
+  margin-top: 150px;
+  font-size: 60px;
+  font-style: normal;
+  font-family: 'Noto Sans JP', sans-serif;
+  }
+/*resten af onepage setup*/
+#pageB {background: #D9DAD9}
+#pageC {background: #232323}
+#pageD {background: #5A5A5A}
+#pageE {background: #5A5A5A}
+/*header*/
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #5A5A5A;
+  padding: 15px;
+  opacity: 0.7;
+    }
+
+ul {width: fit-content; margin: auto; list-style: none;}
+
+nav li {float: left; margin-right: 30px;}
+/* header link knapper*/
+nav li a:link, nav li a:visited {
+  background-color: #5A5A5A;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+nav li a:hover, a:active {
+  background-color: #E94D40;
+}
+.logoheader{
+  width: 70px;
+  height: 50px;
+  margin: auto;
+}
+
+  /*page2*/
+.portrat {
+  height: 100%;
+  width: 75%;
+  margin-top: 120px;
+}
+.portrattext {
+  margin: 10px;
+  padding: 20px;
+}
+.flexbox {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+}
+.migoverskrift {
+    margin: auto;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+.linemig {
+  margin: auto;
+  width: 70%;
+}
+.mitbrand {
+  height: 300px;
+  width: 500px;
+  border-radius: 8px;
+  padding-left: 25px;
+  filter: grayscale(100%);
+  margin-left: 500px;
+  margin-bottom: 1000px;
+}
+
+/* Page 3 (mine projekter)*/
+.overskriftprojekter {
+  margin: auto;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+.lineprojekt {
+  margin: auto;
+  border-color: #232323;
+  width: 70%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  text-align: center;
+}
+.billede{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/*side 5 - Kontakt*/
+.overskiftkontakt{
+    margin: auto;
+      width: 160px;
+      padding: 10px;
+      font-size: 50px;
+      color: #D9DAD9;
+}
+
+.tekstkontakt{
+  color: #D9DAD9;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: #D9DAD9;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerkontakt {
+  border-radius: 5px;
+  background-color: #D9DAD9;
+  padding: 20px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Onepage Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+    rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#pageA"> <img src="img/d.e.logo.hvid.png" alt="logo" class="logoheader"></a></li>
+      <li><a href="#pageA"> Min Portfolio </a></li>
+      <li><a href="#pageB"> Om mig </a></li>
+      <li><a href="#pageC"> Mine projekter </a></li>
+      <li><a href="#pageE"> Kontakt </a></li>
+      <li><a href="opgaver.html"> Projekter præsenteret </a></li>
+    </ul>
+  </nav>
+</header>
+    <section id="pageA">
+      <div class="bg-image"></div>
+        <div class="background-text">
+          <img src="img/delogo2.png" alt="logo" class="logobillede">
+            <h1> Min portfolio </h1>
+            <p> Daniel Berg Ejlersen - Multimediedesigner</p>
+        </div>
+    </section>
+
+    <section id="pageB">
+
+        <h2 class="migoverskrift"> Om mig </h2>
+
+        <hr class="linemig">
+        <div class="flexbox">
+          <img src="img/portcut.png" alt="portrat" class="portrat">
+          <p class="portrattext">
+            Mit navn er Daniel Berg Ejlersen og er 22 år gammel. Jeg er bosat i Odense og har studeret som multimediedesigner på UCL Odense i et halvt år. Jeg valgte multimediedesigner fordi jeg har gerne vil være innovativ. Jeg har haft innovation siden 7 klasse og været til mange forskellige konferencer og konkurrencer igennem skolen. Jeg er en glad og udadvendt personlighed, der både har en sjov og arbejdsorienteret side. Jeg kommer oprindeligt fra Fredericia hvor jeg er født og opvokset.
+            <br>
+            Jeg arbejder bedst i grupper projekter men er også god til at fordybe mig. Jeg vil henvende mig til nyopstartet virksomheder, der mangler en kreativ teamspiller med nyt synspunkt. Jeg vil bruge mine evner som multimediedesigner til at forbedre eller starte virksomhedens brand eller promotioner.
+            <br>
+            <br>
+            Som multimediedesigner har jeg mange forskellige færdigheder, der vil være tilgodese mange forskellige former for virksomheder. Færdigheder der både kan blive brugt til fysiske former for promotion såsom posters, klientrapporter og forskellige former for produkter og installationer. Derudover har jeg redskaber der kan tilgodese virksomheders online promotion såsom, HTML5 og CSS-kodning, film og billede redigering og stopmotion filmning. Jeg har en basisk forståelse for en lang række Adobe programmer: Photoshop, Illustrator, Premiere pro, Adobe XD og InDesign.
+          </p>
+        </div>
+    </section>
+
+    <section id="pageC">
+      <h2 class="overskriftprojekter"> Mine projekter</h2>
+        <hr class="lineprojekt">
+          <div class="grid-container">
+            <a href="opgaver.html#pageB" class="grid-item"><img src="img/coffee.cup.png" alt="coffeecup" class="billede"></a>
+            <a href="opgaver.html#pageC" class="grid-item"><img src="img/ide.jpg" alt="ide" class="billede"></a>
+            <a href="opgaver.html#pageD" class="grid-item"><img src="img/udklipapp.png" alt="udklipdatingapp" class="billede"></a>
+            <a href="opgaver.html#pageE" class="grid-item"><img src="img/udklipredesign.png" alt="redesign" class="billede"></a>
+            <a href="opgaver.html#pageF" class="grid-item"><img src="img/badtypo3.jpg" alt="badtpografi" class="billede"></a>
+            <a href="opgaver.html#pageG" class="grid-item"><img src="img/selvportrat.png" alt="Illustratorselvportrat" class="billede"></a>
+          </div>
+
+    </section>
+
+    <section id="pageE">
+      <h2 class="overskiftkontakt"> Kontakt </h2>
+      <p class="tekstkontakt"> Hvis du har spørgsmål eller vil have kontakt til mig kan i skrive til mig her. I kan finde mig på LinkIn, hvis du vil vide mere om mig kan du finde min process portfolio herunder.
+      </p>
+<!-- kontakt platform-->
+<div class="containerkontakt">
+  <form action="/action_page.php">
+    <label for="fname">Fuld navn</label>
+    <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Din email..">
+
+    <label for="country">Vælg emne</label>
+    <select id="country" name="country">
+      <option value="danmark">Jobrelateret</option>
+      <option value="england">Mere infomation</option>
+      <option value="tyskland">Andet</option>
+
+    <label for="subject">Skriv her</label>
+    <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    </section>
+
+  </body>
+</html>

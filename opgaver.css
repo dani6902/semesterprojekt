@@ -1,0 +1,291 @@
+/*onepage setup*/
+*{margin:0;
+padding:0;
+font-family: 'Noto Sans JP', sans-serif;
+}
+section {width: 100%; height: 800px; float:left;
+}
+  #pageA {background-image: url(img/forsideto.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+}
+  #pageB {background: #D9DAD9}
+  #pageC {background: #232323}
+  #pageD {background: #5A5A5A}
+  #pageE {background: #232323}
+  #pageF {background: #5A5A5A}
+  #pageG {background: #D9DAD9}
+  /*header*/
+.wrapper {
+align-items: flex-end;
+}
+  nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #5A5A5A;
+    padding: 15px;
+    opacity: 0.7;
+      }
+
+  ul {width: fit-content; margin: auto; list-style: none;}
+
+  nav li {float: left; margin-right: 30px;}
+  /* header link knapper*/
+  nav li a:link, nav li a:visited {
+    background-color: #5A5A5A;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+  }
+
+  nav li a:hover, a:active {
+    background-color: #E94D40;
+  }
+  .logoheader{
+    width: 70px;
+    height: 50px;
+    margin: auto;
+  }
+  /*page1 - sup introside*/
+.logofront{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 25%;
+}
+.introoverskrift{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 50pt;
+  margin-bottom: 15%;
+}
+/*page2 - coffeecup animation*/
+.kodeoverskrift{
+  margin: auto;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+.flexcontainercoffee {
+  display: flex;
+  justify-content: flex-end;
+}
+.coffeecup {
+	width: 400px;
+	height: 400px;
+  margin: 50px;
+  border: 1px black;
+	background: url('img/coffee.cup1.png') 0 0 no-repeat;
+	animation: play 2s steps(19) infinite;
+}
+@keyframes play {
+	0%{background-position:0px;}
+  100% { background-position: -7600px; }
+}
+.coffee {
+  width: 100%;
+  margin-top: 75px;
+}
+.coffeeprojekt {
+  background-color: #232323;
+  padding: 40px;
+  width: 50%;
+  margin-right: 2%;
+  border-radius: 8px;
+  color: #D9DAD9;
+}
+/*page 3 sekvportræt*/
+.overskiftportrat{
+  margin: auto;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  color: #D9DAD9;
+}
+.flexcontainerportrat {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%;
+  }
+.portrattext{
+  background-color: #232323;
+  padding: 50px;
+  width: 50%;
+  margin-right: 2%;
+  border-radius: 8px;
+  color: #D9DAD9;
+}
+.screenshot {
+  width: 500px;
+  height: 250px;
+  margin-left: 70px;
+}
+/*page 4 datingapp*/
+.datingapp {
+  margin: auto;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  color: #D9DAD9;
+}
+.apptext { grid-area: main; }
+.udklipapp { grid-area: right; }
+.mindmap { grid-area: footer; }
+
+.gridapp {
+  display: grid;
+  grid-template-areas:
+    'right right main main'
+    'right right main main'
+    'footer footer main main'
+    'footer footer main main';
+  grid-gap: 10px;
+  padding: 10px;
+}
+.udklipapp {
+  height: 90%;
+  width: 70%;
+  margin-left: 70px;
+  border-radius: 8px;
+}
+.mindmap {
+  height: 100%;
+  width: 70%;
+  margin-left: 70px;
+  border-radius: 8px;
+}
+.apptext {
+  background-color: #232323;
+  padding: 50px;
+  width: 50%;
+  margin-left: 20%;
+  border-radius: 8px;
+  color: #D9DAD9;
+}
+/* page 5 redesign*/
+.redesignoverskrift {
+  margin: auto;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  color: #D9DAD9;
+}
+.desingtext { grid-area: main; }
+.gammeldesign { grid-area: right; }
+.redesign { grid-area: footer; }
+
+.gridredesign {
+  display: grid;
+  grid-template-areas:
+    'right right main main'
+    'footer footer main main'
+    'footer footer main main';
+  grid-gap: 20px;
+  grid-template-rows: 200px 100px 100px;
+}
+.gammeldesign {
+  height: 300px;
+  width: 70%;
+  margin-left: 70px;
+  border-radius: 8px;
+}
+.redesign {
+  width: 70%;
+  height: 300px;
+  margin-left: 70px;
+  border-radius: 8px;
+  margin-top: 15%;
+}
+.designtext {
+  width: 70%;
+  margin-left: -10%;
+  color: #D9DAD9;
+}
+/* page 6 bad typografi*/
+.typografioverskrift{
+  margin: auto;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  color: #D9DAD9;
+}
+.flextypo {
+  display: flex;
+}
+.badtypoen {
+  height: 500px;
+  weight: 200px;
+  margin-right: 25px;
+  border-radius: 8px;
+  margin-left: 70px;
+}
+.badtypoto {
+  height: 500px;
+  weight: 200px;
+  margin-right: 25px;
+  border-radius: 8px;
+}
+.badtypotre {
+  height: 500px;
+  weight: 200px;
+  margin-right: 25px;
+  border-radius: 8px;
+}
+.typotext {
+  background-color: #232323;
+  padding: 50px;
+  width: 50%;
+  border-radius: 8px;
+  color: #D9DAD9;
+  margin-right: 10%;
+}
+/* page 7 selvportæt Illustrator */
+.illustratortext{
+  background-color: #232323;
+  padding: 50px;
+  width: 50%;
+  border-radius: 8px;
+  color: #D9DAD9;
+  margin-right: 10%;
+  height: 300%;
+}
+.selvportratoverskrift{
+  margin: auto;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  color: #232323;
+}
+.typotext { grid-area: main; }
+.lightroomportrat { grid-area: right; }
+.selvportrat { grid-area: footer; }
+
+.gridselvportrat {
+  display: grid;
+  grid-template-areas:
+    'right right main main'
+    'right right main main'
+    'footer footer main main'
+    'footer footer main main';
+  grid-gap: 20px;
+  grid-template-rows: 100px 100px 100px 100px;
+}
+.selvportrat {
+  position: relative;
+  margin-top: 160px;
+  border-radius: 8px;
+  margin-left: 70px;
+  width: 50%;
+}
+.lightroomportrat{
+  width: 650px;
+  height: 400px;
+  margin-left: 70px;
+}
